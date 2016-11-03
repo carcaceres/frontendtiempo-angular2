@@ -1,0 +1,60 @@
+<br/>
+<br/>
+
+
+<div class="container">
+
+
+  <div class="panel panel-default" class="sombra">
+    <div class="panel-heading" >Mostrar Ciudades</div>
+    <div class="panel-body">
+
+    <table class="table">
+    <thead>
+      <tr>
+      <th></th>
+        <th>Codigo</th>
+        <th>Ciudad</th>
+        <th>Temperatura</th>
+        <th>Estado</th>
+         <th></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ciudad of ciudades">
+       <td>
+     
+      <img src="{{ciudad.url}}" 
+   alt="ciudad.nomCiudad" width="50" height="50" title="{{ciudad.nomCiudad}}" class="img-circle"/> 
+
+    </td>
+        <td>{{ciudad.codCiudad}}</td>
+        <td>{{ciudad.nomCiudad}}</td>
+        <td>{{ciudad.celsius}}C°|{{ciudad.farenheit}}F°</td>
+        <td>
+        <a  href="#/mostrar" title="{{ciudad.nomestado}}"> 
+     
+   <img *ngIf="ciudad.idestado === 1"src="app/assets/images/soleado.png" 
+   alt="soleado" width="50" height="50" title="{{ciudad.nomestado}}" />      	
+   <img *ngIf="ciudad.idestado === 2" src="app/assets/images/parcialnub.png" 
+   alt="parcialmente nublado" width="50" height="50" title="{{ciudad.nomestado}}"/>
+   <img *ngIf="ciudad.idestado === 3" src="app/assets/images/nublado.png" alt="nublado"
+   width="50" height="50" title="{{ciudad.nomestado}}"/>
+   <img *ngIf="ciudad.idestado === 4" src="app/assets/images/tormelect.png" alt="tormelect"
+    width="50" height="50" title="{{ciudad.nomestado}}"/>    
+    </a>                          
+    </td>
+   <td><button class="btn btn-info" (click)="actualizar(ciudad.codCiudad)"> <span class="glyphicon glyphicon-eye-open"></span> Ver</button></td>
+      </tr>
+       </tbody>
+  </table>
+  </div>
+   
+  </div>
+</div>
+<br/>
+
+<br/>
+<br/>
+

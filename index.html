@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+    <html>
+      <head>
+        <base href="/">
+        <link rel="icon" type="image/png" href="app/assets/images/favico.png" />
+        <title>.:Canal Clima</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+
+
+
+
+
+        <!-- 1. Load libraries -->
+         <!-- Polyfill(s) for older browsers -->
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="node_modules/jquery/dist/jquery.js"></script>
+           <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- 2. Configure SystemJS -->
+        <script src="systemjs.config.js"></script>
+        <link rel="stylesheet" href="app/assets/css/style.css">  
+        <script>
+          System.import('app').catch(function(err){ console.error(err); });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        
+</script>
+
+
+      </head>
+      <!-- 3. Display the application -->
+      <body>
+      <header>
+      <img src="app/assets/images/logos.png">
+      </header>
+        <my-app>Cargando...</my-app>
+        <br/>
+        <br/>
+        <footer><strong>Copyright Derecho de Autor 2016</strong></footer>
+      </body>
+    </html>

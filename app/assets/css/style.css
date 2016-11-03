@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-sep-2016, 12:33:45
+    Author     : Carlos
+*/
+
+
+body{
+     margin: 0 auto;
+}
+
+header{
+    background-color: #1a237e;
+    color:white;
+    width: 100%;
+    margin-top: -10px; 
+    height: 140px;
+
+}
+
+.showingData{
+ display: none;
+}
+
+#contenedor{
+ 
+  margin-left: 12%;
+  margin-right: 12%;
+
+    -webkit-box-shadow: 2px 2px 2px 2px #D4D4D4;
+    box-shadow: 2px 2px 2px 2px #D4D4D4; 
+    height: 100%;
+
+}
+#seleccion{
+ 
+  margin-left: 12%;
+  margin-right: 12%;
+
+    }
+
+#contenedor > div > div > div.col-sm-6 > img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 72%; 
+    height: 70%;
+}
+
+footer { 
+    display: block;
+    position:relative;
+   left:0px;
+   bottom:0px;
+   height:56px;
+   width:100%;
+   background:#999;
+   padding-top:20px;
+   text-align: center;
+  background-color: #1a237e;
+    color:white;
+
+
+}
+
+body > header > img{
+     margin-top: 20px;
+}
+
+body > my-app > editar-clima > div > div > div.panel-heading{
+
+   text-align: center;
+    font-size: 24px;
+}

@@ -1,0 +1,11 @@
+.sombra{
+	-webkit-box-shadow: 3px 3px 3px 3px #E0E0E0;
+box-shadow: 3px 3px 3px 3px #E0E0E0;
+}
+
+
+body > my-app > editar-clima > div > div > div.panel-heading{
+
+	 text-align: center;
+	  font-size: 24px;
+}

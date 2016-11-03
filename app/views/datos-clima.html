@@ -1,0 +1,48 @@
+
+<br/>
+<br/>
+
+
+<div id="contenedor">
+                    <div class="container">
+
+  <div class="row">
+    <div class="col-sm-3" >
+    
+      <h4 (click)="onShowHideSel(true)" [class.showingData]="mostrarSel===true"><strong >{{clima.nomCiudad}}</strong></h4>
+      <select class="form-control" id="ciudad" name="ciudad"  required (click)="clicked()" i #ciudad="ngModel" [(ngModel)]="codigo"
+      (click)="onShowHideSel(false)" [class.showingData]="mostrarSel===false" >
+                <option value="Ninguna">Ninguna</option>
+                <option *ngFor="let ciudad of ciudades" [value]="ciudad.codCiudad">{{ciudad.nomCiudad}}</option>
+            </select>
+                    <p><strong>{{clima.dia}}</strong></p>
+                    <p><strong>{{clima.nomestado}}</strong></p>
+                    <h3 ><strong>{{grado}}</strong></h3> 
+                   <button class="btn btn-info" (click)="onFarenheit(true)" [class.showingData]="mostrarDatos===true" >
+                   Farenheit
+                   </button>
+                   <button class="btn btn-info" (click)="onCelsius(false)" [class.showingData]="mostrarDatos===false" >
+                   Celsius
+                   </button>
+    </div>
+    <div class="col-sm-3" >
+         <img src='{{clima.url}}' alt="{{clima.nomestado}}"
+                         width="170" height="150"/>
+                    <p><strong>Probabilidad de Precipitacion: 
+                           {{clima.probprec}}%</strong></p>
+                    <p><strong>Humedad: {{clima.humedad}}%</strong></p>
+                    <p><strong>Viento: {{clima.viento}}Km/h</strong></p>  
+    </div>
+    <div class="col-sm-6" >
+         <img src='{{clima.urlImg}}' alt="clima.nomCiudad"
+                 class="img-rounded img-responsive" />
+                  
+    </div>
+  </div>
+</div>
+
+                  
+    </div>
+    <br/>
+     <br/>
+
