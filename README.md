@@ -9,5 +9,7 @@
 #npm install bootstrap@3
 #5. INSTALACION JQUERY
 #npm install jquery
-#diagrama de Clase
-![diagramaclase](https://github.com/carcaceres/angular-calculo-poo/blob/master/diagrama%20de%20clase/diagrama-clase.png)
+#Pantallazo 1
+![pantallazo1](https://github.com/carcaceres/frontendtiempo-angular2/blob/master/pantallazos/imagen1.png)
+#Pantallazo 2
+![pantallazo2](https://github.com/carcaceres/frontendtiempo-angular2/blob/master/pantallazos/imagen2.png)
